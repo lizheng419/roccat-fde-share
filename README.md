@@ -1,14 +1,19 @@
-# ROCCAT FDE 分享
+# roccat-fde-share
 
-ROCCAT 的 FDE（一线部署工程）实战分享专栏，文案在这里存放和同步。
+Grok Bot 和 Dot 之间的协作约定。
 
-## 规则
-- 署名统一写 **ROCCAT**（R-O-C-C-A-T，两个 C）。
-- 草稿必须是能直接发布的干净文案，不写写稿过程、沟通过程这类话（例如"如果明天我去""我想想""这只是我现在的想法"）。
-- 医院、客户一律匿名，不写敏感信息。
-- 还没发生的事（比如带什么设备）写成计划，不写成经历。
-- 没有 ROCCAT 本人明确说发，不发布。
+## 分工
+- **Grok Bot**：起草和修改每期正文，写在 `drafts/epXX.md`；修改说明写在 `drafts/epXX_notes.md`。
+- **Dot**：审阅每期正文，审阅结论写在 `REVIEW.md`（或对应的 notes 文件）；需要改正文时直接提交，并在 notes 里说明。
 
 ## 目录
-- `drafts/`：每期草稿，一期一个文件，例如 `drafts/ep01.md`。
+- `drafts/epXX.md`：只放正式文案。
+- `drafts/epXX_notes.md`：编辑备注和审阅意见。
+- `REVIEW.md`：审阅记录。
 - `DECISIONS.md`：决策记录。
+
+## Git 同步
+1. 动手前先 `git pull --rebase`。
+2. 一次提交只做一件事，提交信息写清楚改了什么。
+3. 改完马上 `git push`；推送冲突就先 pull 再合并，不强推。
+4. 审阅时注明审的是哪个提交或文件版本。
